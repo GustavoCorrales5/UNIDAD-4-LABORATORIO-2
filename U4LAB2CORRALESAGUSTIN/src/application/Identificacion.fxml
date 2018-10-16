@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IdentificacionController">
+   <center>
+      <TextField fx:id="nick" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+         </padding>
+      </TextField>
+   </center>
+   <left>
+      <Label text="Nick:  " BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+   </left>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ingresar" mnemonicParsing="false" onAction="#guardarNick" text="Ingresar" />
+            <Button fx:id="cargar" mnemonicParsing="false" onAction="#cargar" text="Cargar" />
+            <Button fx:id="bJugador" mnemonicParsing="false" onAction="#busquedaBinaria" text="Buscar Jugador" />
+            <Button fx:id="bPokemon" mnemonicParsing="false" onAction="#busquedaBinariaPokemon" text="Buscar Pokemon" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label text="Digite su nick" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>

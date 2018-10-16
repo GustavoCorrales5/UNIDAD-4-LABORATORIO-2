@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane fx:id="border" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PuntajeController">
+   <bottom>
+      <Button fx:id="Ordernar" mnemonicParsing="false" text="Orden Alfabetico" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <GridPane fx:id="Orden" BorderPane.alignment="CENTER">
+	<!-- TODO Add Nodes -->
+</GridPane>
+   </center>
+</BorderPane>
